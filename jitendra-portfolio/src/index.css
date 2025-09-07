@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* small custom */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* typewriter underline effect for subtitle */
+.typewriter {
+  display: inline-block;
+  position: relative;
+}
+.typewriter::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg,#06b6d4,#f97316);
+  transition: width .4s ease;
+}
+.typewriter:hover::after {
+  width: 100%;
+}
