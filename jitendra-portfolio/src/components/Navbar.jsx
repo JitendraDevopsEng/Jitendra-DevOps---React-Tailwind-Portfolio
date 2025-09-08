@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function Navbar() {
-  const items = ["About","Experience","Skills","Projects","Contact"];
+  const items = ["about","experience","skills","projects","contact"];
   return (
     <motion.nav
       initial={{ y: -50, opacity: 0 }}
