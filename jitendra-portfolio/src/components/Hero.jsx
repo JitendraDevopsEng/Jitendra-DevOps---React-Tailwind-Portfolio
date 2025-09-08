@@ -26,6 +26,29 @@ export default function Hero() {
           Jitendra Kumar
         </motion.h1>
 
+        {/* Open To Work Animated Line */}
+        <motion.p
+          className="mt-4 text-lg md:text-xl font-bold text-pink-400 drop-shadow-lg"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
+          <TypeAnimation
+            sequence={[
+              "🎉 Open To Work 🚀",
+              2000,
+              "📅 Serving Notice Period",
+              2000,
+              "⏳ Last Working Day: 30th Sep",
+              2000,
+            ]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            className="text-pink-400 font-extrabold"
+          />
+        </motion.p>
+
         {/* Animated Subtitle */}
         <motion.div
           className="mt-3 text-lg md:text-xl text-gray-300"
