@@ -36,12 +36,12 @@ export default function Hero() {
           <span className="font-semibold text-yellow-300">DevOps Engineer — </span>
           <TypeAnimation
             sequence={[
-              "Azure Cloud", 2000,
-              "Terraform", 2000,
-              "Docker", 2000,
-              "Kubernetes", 2000,
-              "CI/CD", 2000,
-              "GitHub Actions", 2000,
+              "☁️ Azure (Cloud Infrastructure)", 2000,
+              "⚙️ Terraform (IaC)", 2000,
+              "🐳 Docker", 2000,
+              "☸️ Kubernetes", 2000,
+              "🚀 CI/CD (Azure DevOps, GitHub Actions)", 2000,
+              "📊 Monitoring", 2000,
             ]}
             wrapper="span"
             cursor={true}
