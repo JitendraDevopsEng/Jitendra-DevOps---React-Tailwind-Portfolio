@@ -15,12 +15,20 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Left corner - Radhe */}
         <div className="flex flex-col items-center">
-          <img
-            src={radheImg}
-            alt="Radhe"
-            className="w-8 h-8 md:w-10 md:h-10 object-contain mb-1"
-          />
-          <h1 className="text-lg md:text-xl font-extrabold text-cyan-400">
+          <motion.div
+            animate={{ y: [0, -6, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="relative"
+          >
+            {/* Gradient Aura Overlay */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-400 via-purple-400 to-yellow-400 opacity-60 blur-md animate-gradient-x"></div>
+            <img
+              src={radheImg}
+              alt="Radhe"
+              className="relative w-10 h-10 md:w-12 md:h-12 object-contain"
+            />
+          </motion.div>
+          <h1 className="text-lg md:text-xl font-extrabold text-cyan-400 mt-1">
             Radhe
           </h1>
         </div>
@@ -42,12 +50,20 @@ export default function Navbar() {
 
         {/* Right corner - Krishna */}
         <div className="flex flex-col items-center">
-          <img
-            src={krishnaImg}
-            alt="Krishna"
-            className="w-8 h-8 md:w-10 md:h-10 object-contain mb-1"
-          />
-          <h1 className="text-lg md:text-xl font-extrabold text-pink-400">
+          <motion.div
+            animate={{ y: [0, -6, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="relative"
+          >
+            {/* Gradient Aura Overlay */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 via-green-400 to-purple-400 opacity-60 blur-md animate-gradient-x"></div>
+            <img
+              src={krishnaImg}
+              alt="Krishna"
+              className="relative w-10 h-10 md:w-12 md:h-12 object-contain"
+            />
+          </motion.div>
+          <h1 className="text-lg md:text-xl font-extrabold text-pink-400 mt-1">
             Krishna
           </h1>
         </div>
