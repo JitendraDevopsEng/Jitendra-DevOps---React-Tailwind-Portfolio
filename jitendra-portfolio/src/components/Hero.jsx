@@ -26,19 +26,9 @@ export default function Hero() {
           Jitendra Kumar
         </motion.h1>
 
-        {/* 🔥 Open to Work Banner */}
-        <motion.div
-          className="mt-4 inline-block px-4 py-2 rounded-full bg-gradient-to-r from-green-400 via-yellow-400 to-red-400 text-black font-semibold shadow-lg animate-bounce"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.3, duration: 0.7 }}
-        >
-          🚀 Open to Work — Last Working Day: <span className="font-bold">30 Sep 2025</span>
-        </motion.div>
-
         {/* Animated Subtitle */}
         <motion.div
-          className="mt-5 text-lg md:text-xl text-gray-300"
+          className="mt-3 text-lg md:text-xl text-gray-300"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
@@ -46,7 +36,7 @@ export default function Hero() {
           <span className="font-semibold text-yellow-300">DevOps Engineer — </span>
           <TypeAnimation
             sequence={[
-              "Azure", 2000,
+              "Azure Cloud", 2000,
               "Terraform", 2000,
               "Docker", 2000,
               "Kubernetes", 2000,
@@ -58,6 +48,22 @@ export default function Hero() {
             repeat={Infinity}
             className="text-cyan-300 font-semibold"
           />
+        </motion.div>
+
+        {/* Qualifications */}
+        <motion.div
+          className="mt-6 text-gray-300 text-sm md:text-base bg-gray-800 p-4 rounded-lg shadow-lg"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.8 }}
+        >
+          <h3 className="text-lg font-bold text-cyan-400 mb-2">Qualifications</h3>
+          <ul className="space-y-1 text-gray-300">
+            <li>📘 10th — U.P. Board (2009)</li>
+            <li>📗 12th — U.P. Board (2011)</li>
+            <li>🎓 Diploma — IASE University (2013)</li>
+            <li>💻 BCA — M.P. University (2025)</li>
+          </ul>
         </motion.div>
       </div>
     </section>
