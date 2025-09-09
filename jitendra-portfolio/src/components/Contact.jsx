@@ -49,20 +49,22 @@ export default function Contact() {
             <Phone size={20} /> +91 7017720023
           </p>
 
+          {/* LinkedIn Button */}
           <a
             href="https://www.linkedin.com/in/jitendra-kumar-devopseng"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 hover:text-cyan-300"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold shadow-md hover:opacity-90 transition"
           >
-            <Linkedin size={20} /> linkedin.com/in/jitendra-kumar-devopseng
+            <Linkedin size={20} /> LinkedIn Profile
           </a>
 
+          {/* Naukri Button */}
           <a
             href="https://www.naukri.com/mnjuser/profile?id=&altresid"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 hover:text-cyan-300"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-pink-500 to-yellow-500 text-white font-semibold shadow-md hover:opacity-90 transition"
           >
             <Briefcase size={20} /> Naukri Profile
           </a>
