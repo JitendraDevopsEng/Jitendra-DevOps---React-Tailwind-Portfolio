@@ -12,7 +12,7 @@ export default function ParticlesBackground() {
       init={particlesInit}
       options={{
         background: {
-          color: { value: "transparent" }, // Fixed here
+          color: "transparent",
         },
         fullScreen: {
           enable: true,
