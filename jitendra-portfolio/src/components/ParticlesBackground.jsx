@@ -12,69 +12,50 @@ export default function ParticlesBackground() {
       init={particlesInit}
       options={{
         background: {
-          color: "transparent",
+          color: { value: "transparent" },
         },
         fullScreen: {
           enable: true,
-          zIndex: -1, // background ke liye
+          zIndex: -1,
         },
         particles: {
           number: {
-            value: 25, // Om symbols kitne hone chahiye
-            density: {
-              enable: true,
-              area: 800,
-            },
+            value: 20,
           },
           shape: {
             type: "char",
             character: {
-              value: ["ॐ"], // Hindi Om symbol
+              value: ["ॐ"],
               font: "Arial",
               style: "",
               weight: "bold",
             },
           },
-          color: {
-            value: ["#ff6b6b", "#feca57", "#48dbfb", "#1dd1a1", "#f368e0"], // gradient colors
-          },
-          opacity: {
-            value: 0.8,
-          },
           size: {
-            value: 20,
+            value: 24,
             random: true,
+          },
+          color: {
+            value: ["#ff6b6b", "#48dbfb", "#1dd1a1", "#f368e0", "#feca57"],
           },
           move: {
             enable: true,
             speed: 2,
-            direction: "none",
             random: true,
-            straight: false,
-            outModes: {
-              default: "out",
-            },
+            outModes: { default: "out" },
+          },
+          opacity: {
+            value: 0.9,
           },
         },
         interactivity: {
           events: {
-            onHover: {
-              enable: true,
-              mode: "repulse", // mouse le jaoge to Om hat jayenge
-            },
-            onClick: {
-              enable: true,
-              mode: "push", // click karoge to naye Om aa jayenge
-            },
+            onHover: { enable: true, mode: "repulse" },
+            onClick: { enable: true, mode: "push" },
           },
           modes: {
-            repulse: {
-              distance: 100,
-              duration: 0.4,
-            },
-            push: {
-              quantity: 2,
-            },
+            repulse: { distance: 100 },
+            push: { quantity: 2 },
           },
         },
       }}
