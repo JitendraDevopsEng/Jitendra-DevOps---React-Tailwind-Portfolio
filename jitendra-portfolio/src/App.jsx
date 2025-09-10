@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ParticlesBackground from "./components/ParticlesBackground"; // NEW Import
+import ParticlesBackground from "./components/ParticlesBackground"; // 👈 Import
 
 export default function App() {
   return (
