@@ -1,4 +1,4 @@
-import Particles from "react-tsparticles";
+import Particles from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
 export default function ParticlesBackground() {
@@ -11,30 +11,19 @@ export default function ParticlesBackground() {
       id="tsparticles"
       init={particlesInit}
       options={{
-        background: {
-          color: { value: "transparent" },
-        },
-        fullScreen: {
-          enable: true,
-          zIndex: -1,
-        },
+        background: { color: { value: "transparent" } },
+        fullScreen: { enable: true, zIndex: -1 },
         particles: {
-          number: {
-            value: 20,
-          },
+          number: { value: 20 },
           shape: {
             type: "char",
             character: {
-              value: ["ॐ"],
+              value: ["ॐ"], // Hindi Om symbol
               font: "Arial",
-              style: "",
               weight: "bold",
             },
           },
-          size: {
-            value: 24,
-            random: true,
-          },
+          size: { value: 24, random: true },
           color: {
             value: ["#ff6b6b", "#48dbfb", "#1dd1a1", "#f368e0", "#feca57"],
           },
@@ -44,9 +33,7 @@ export default function ParticlesBackground() {
             random: true,
             outModes: { default: "out" },
           },
-          opacity: {
-            value: 0.9,
-          },
+          opacity: { value: 0.9 },
         },
         interactivity: {
           events: {
