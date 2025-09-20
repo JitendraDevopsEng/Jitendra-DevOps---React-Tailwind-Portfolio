@@ -84,8 +84,7 @@ export default function Hero() {
           <ul className="space-y-1 text-gray-300">
             <li>📘 10th — U.P. Board (2009)</li>
             <li>📗 12th — U.P. Board (2011)</li>
-            <li>🎓 Diploma — IASE University (2013)</li>
-            <li>💻 BCA — M.P. University (2025)</li>
+            <li>💻 B.tech — IASE University (2015)</li>
           </ul>
         </motion.div>
       </div>
