@@ -37,9 +37,9 @@ export default function Hero() {
             sequence={[
               "🎉 Open To Work 🚀",
               2000,
-              "📅 Serving Notice Period",
+              "📅 Notice Period 15 days",
               2000,
-              "⏳ Last Working Day: 30th Sep",
+              "⏳ DevOps Engineer",
               2000,
             ]}
             wrapper="span"
