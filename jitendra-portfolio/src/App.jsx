@@ -6,23 +6,29 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ParticlesBackground from "./components/ParticlesBackground";
 
 export default function App() {
   return (
-    // bg-gray-900 hata diya, custom saffron background index.css handle karega
-    <div className="min-h-screen relative app-overlay text-white">
-      <ParticlesBackground /> {/* 👈 Agar particles use karna ho to rakh, warna hata de */}
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="relative min-h-screen text-white">
+      {/* 🌅 Animated Saffron Background */}
+      <div className="absolute inset-0 bg-saffron-animated"></div>
+
+      {/* 🌓 Overlay for readability */}
+      <div className="absolute inset-0 bg-black/30"></div>
+
+      {/* 🌐 Content */}
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
