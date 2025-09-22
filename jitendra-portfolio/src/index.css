@@ -7,20 +7,18 @@ html {
   scroll-behavior: smooth;
 }
 
-/* small custom */
+/* Small custom */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
 }
 
-/* typewriter underline effect for subtitle */
+/* Typewriter underline effect for subtitle */
 .typewriter {
   display: inline-block;
   position: relative;
 }
+
 .typewriter::after {
   content: "";
   position: absolute;
@@ -28,22 +26,26 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg,#06b6d4,#f97316);
-  transition: width .4s ease;
+  background: linear-gradient(90deg, #06b6d4, #f97316);
+  transition: width 0.4s ease;
 }
+
 .typewriter:hover::after {
   width: 100%;
 }
 
-/* 🌅 Saffron Gradient Animation */
-@keyframes saffronShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* 🌈 Gradient Aura Animation */
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
-.bg-saffron-animated {
-  background: linear-gradient(-45deg, #FF9F45, #FF6F00, #FF8C00, #FFD280);
-  background-size: 300% 300%;
-  animation: saffronShift 12s ease infinite;
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 4s ease infinite;
 }
