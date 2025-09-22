@@ -3,17 +3,47 @@
 @tailwind utilities;
 
 /* Smooth scroll */
-html {
+html, body, #root {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
-/* small custom */
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --saffron-1: #ff9a3c;  /* light saffron */
+  --saffron-2: #ff6f00;  /* deep saffron */
+  --overlay: rgba(0,0,0,0.35); /* optional dark overlay */
 }
 
-/* typewriter underline effect for subtitle */
+/* 🌅 Animated saffron gradient background */
+@keyframes saffronShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(270deg, var(--saffron-1), #ff8a00, var(--saffron-2));
+  background-size: 600% 600%;
+  animation: saffronShift 12s ease infinite;
+
+  color: #fff;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+/* 🔲 Optional overlay for better text contrast */
+.app-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ✍️ typewriter underline effect for subtitle */
 .typewriter {
   display: inline-block;
   position: relative;
@@ -32,7 +62,7 @@ body {
   width: 100%;
 }
 
-/* 🌈 Gradient Aura Animation */
+/* 🌈 Gradient Aura Animation (keep existing) */
 @keyframes gradient-x {
   0%, 100% {
     background-position: 0% 50%;
@@ -41,8 +71,12 @@ body {
     background-position: 100% 50%;
   }
 }
-
 .animate-gradient-x {
   background-size: 200% 200%;
   animation: gradient-x 4s ease infinite;
+}
+
+/* ♿ Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
 }

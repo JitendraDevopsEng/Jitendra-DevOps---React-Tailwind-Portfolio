@@ -10,8 +10,9 @@ import ParticlesBackground from "./components/ParticlesBackground";
 
 export default function App() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen relative">
-      <ParticlesBackground /> {/* 👈 Background sabse pehle */}
+    // bg-gray-900 hata diya, custom saffron background index.css handle karega
+    <div className="min-h-screen relative app-overlay text-white">
+      <ParticlesBackground /> {/* 👈 Agar particles use karna ho to rakh, warna hata de */}
       <Navbar />
       <main>
         <Hero />
