@@ -49,3 +49,21 @@ body {
   background-size: 200% 200%;
   animation: gradient-x 4s ease infinite;
 }
+
+/* 🔥 Pulse Glow Effect */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.8),
+                0 0 20px rgba(255, 165, 0, 0.7),
+                0 0 30px rgba(255, 255, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 107, 107, 1),
+                0 0 40px rgba(255, 165, 0, 0.9),
+                0 0 60px rgba(255, 255, 0, 0.8);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite;
+}

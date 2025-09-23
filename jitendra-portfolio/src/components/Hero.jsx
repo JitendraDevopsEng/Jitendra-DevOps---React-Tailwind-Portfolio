@@ -4,7 +4,10 @@ import profile from "../assets/profile.jpg";
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-6">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center px-6"
+    >
       <div className="max-w-3xl w-full text-center">
         {/* Profile Photo */}
         <motion.img
@@ -37,7 +40,7 @@ export default function Hero() {
             sequence={[
               "🎉 Open To Work 🚀",
               2000,
-              "📅 Notice Period 15 days",
+              "⏱️ Immediate Joiner",
               2000,
               "⏳ DevOps Engineer",
               2000,
@@ -56,15 +59,18 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <span className="font-semibold text-yellow-300">DevOps Engineer — </span>
+          <span className="font-semibold text-yellow-300">
+            DevOps Engineer —{" "}
+          </span>
           <TypeAnimation
             sequence={[
               "☁️ Azure (Cloud Infrastructure)", 2000,
               "⚙️ Terraform (IaC)", 2000,
               "🐳 Docker", 2000,
               "☸️ Kubernetes", 2000,
-              "🚀 CI/CD (Azure DevOps, GitHub Actions)", 2000,
-              "📊 Monitoring", 2000,
+              "🚀 CI/CD (☁️Azure DevOps, 🐙GitHub Actions)", 2000,
+              "📊 Monitoring (Prometheus, Grafana, ELK)", 2000,
+              "🐧 Linux, ⚡PowerShell, 💻Bash, ✍️Scripting", 2000,
             ]}
             wrapper="span"
             cursor={true}
@@ -80,13 +86,30 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <h3 className="text-lg font-bold text-cyan-400 mb-2">Qualifications</h3>
+          <h3 className="text-lg font-bold text-cyan-400 mb-2">
+            Qualifications
+          </h3>
           <ul className="space-y-1 text-gray-300">
             <li>📘 10th — U.P. Board (2009)</li>
             <li>📗 12th — U.P. Board (2011)</li>
-            <li>💻 B.tech — IASE University (2015)</li>
+            <li>💻 Diploma — IASE University (2014)</li>
           </ul>
         </motion.div>
+
+        {/* Download CV Button */}
+        <motion.a
+          href="/Jitendra-Resume.pdf"
+          download
+          className="mt-6 inline-block px-6 py-3 text-lg font-bold text-white rounded-lg 
+          bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-500 
+          shadow-lg hover:scale-105 transform transition 
+          animate-gradient-x animate-pulse-glow"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+        >
+          📄 Download CV
+        </motion.a>
       </div>
     </section>
   );
