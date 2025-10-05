@@ -93,10 +93,10 @@ export default function Hero() {
             <li>📘 10th — U.P. Board (2009)</li>
             <li>📗 12th — U.P. Board (2011)</li>
             <li>💻 Diploma — IASE University (2014)</li>
-            <li>🎓 CERTIFICATION  Exam Prep AZ-400: 
-                    Microsoft DevOps Engineer Expert
-                    Coursera | Issued (Sep 2025)
-                    Credential ID: 5LLIW6TXV5IU</li>
+            <li>🎓 CERTIFICATION — Exam Prep AZ-400: 
+            <li>    Microsoft DevOps Engineer Expert</li>
+            <li>    Coursera | Issued (Sep 2025)</li> 
+            <li>    Credential ID: 5LLIW6TXV5IU</li>
           </ul>
         </motion.div>
 
