@@ -40,7 +40,7 @@ export default function Hero() {
             sequence={[
               "🎉 Open To Work 🚀",
               2000,
-              "⏱️ Immediate Joiner",
+              "⏱️ Serveing Notice Period",
               2000,
               "⏳ DevOps Engineer",
               2000,
@@ -93,6 +93,10 @@ export default function Hero() {
             <li>📘 10th — U.P. Board (2009)</li>
             <li>📗 12th — U.P. Board (2011)</li>
             <li>💻 Diploma — IASE University (2014)</li>
+            <li>🎓 CERTIFICATION  Exam Prep AZ-400: 
+                    Microsoft DevOps Engineer Expert
+                    Coursera | Issued (Sep 2025)
+                    Credential ID: 5LLIW6TXV5IU</li>
           </ul>
         </motion.div>
 
@@ -108,7 +112,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.8 }}
         >
-          📄 Download CV
+          📄 Download Resume
         </motion.a>
       </div>
     </section>
